@@ -19,6 +19,21 @@
 .night-in-th-moon-4-hsla { color: hsla(0, 2, 34, 1); }
 .night-in-th-moon-5-hsla { color: hsla(0, 0, 3, 1); }
 
+/*Box Sizing*/
+html{
+    box-sizing: border-box;
+
+    box-sizing: inherit;
+}
+
+/*Utility classes*/
+
+.container{
+    max-width:80vw;
+    margin:40px auto;
+}
+
+/* Global Styles */
 
 body{
     background-color: #A39E9E;
@@ -81,4 +96,81 @@ header.primary nav ul li a {
 
 header.primary nav ul li a:hover{
     background-color: rgba(0,0,0, .8);
+}
+
+#intro{
+    border-bottom: 1px dotted #0A0A0A;
+    padding-bottom:14px
+}
+
+#intro h2{
+    color:#0A0A0A;
+    text-decoration:wavy;
+}
+
+#content{
+    display:flex;
+    flex-direction:row;
+    gap:5%;
+}
+
+#content .post{
+    box-shadow: 0 4px 8px rgba(0,0,0, .8);
+    padding:10px;
+    border-radius:4px;
+    font-size:.8rem;
+}
+
+#content article.post:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0, .8);
+}
+
+article.post figure{
+    margin:0;
+}
+
+article.post time.post-date, article.post figcaption, article.post .post-meta{
+    text-transform: uppercase;
+    color: #000;
+}
+
+article.post a{
+    color:#333333;
+}
+
+article.post a:hover{
+    text-decoration:none;
+}
+
+article.post img{
+    border:1px solid #0A0A0A;
+    padding:2px;
+    margin:10px auto;
+}
+
+aside[role="complementary"]{
+    background-color:#573030;
+    color:#ffffff;
+    padding: 1.9rem;
+}
+
+aside .container{
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+}
+
+/* Media Queries*/
+
+@media screen and (max-width:600px){
+    header.primary nav ul{
+        flex-direction:column;
+        max-width:250px;
+        margin:auto;
+        gap:10px
+    }
+
+    header.primary nav ul a{
+        display:block;
+    }
 }
