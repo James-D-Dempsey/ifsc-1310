@@ -62,6 +62,11 @@ body{
 }
 
 header.primary{
+
+    
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+
+
     background-color: #573030;
     color: #000008;
     /*text-shadow: 1px 1px #ffffff;*/
@@ -172,6 +177,85 @@ article.post img{
 #practice h2{
     color: #573030;
     border-bottom: 1px solid #000;
+}
+
+table{
+    border:1px solid #0A0A0A;
+    width:50%;
+    border-collapse:collapse;
+}
+tr:nth-child(even){
+    background-color: rgba(86, 47, 47, .5);
+}
+
+tr:nth-child(odd){
+    background-color: rgba(86, 47, 47, .25);
+}
+
+tr:hover{
+    background-color: #573030;
+}
+
+th{
+    background-color: #333333;
+    color:#ffffff;
+    padding:10px;
+}
+td{
+    border:1px solid #0A0A0A;
+    padding:5px;
+}
+
+td:nth-child(2), td:nth-child(3){
+    text-align: right;
+    width:33%;
+}
+
+dd+dt{
+    margin-top: 20px;
+}
+
+#practice ol{
+    clear:both;
+    list-style-type:lower-roman;
+}
+
+#practice ul ul{
+    list-style-type:square;
+}
+
+dl{
+    width:50%;
+    background:#573030;
+    margin:auto;
+}
+dt{
+    font-weight:bold;
+}
+
+dd{
+    margin:0;
+}
+
+#practice h4{
+    border-left: 5px solid #000008;
+    padding:5px 25px;
+}
+
+#practice blockquote{
+    border: 4px double #c0c0c0;
+    padding: 20px 40px;
+    margin: 40px 80px;
+    border-radius: 30px 0;
+    background-color: #573030;
+    color: #ffffff;
+    line-height: 1.4;
+    text-shadow: 1px 1px #000;
+}
+
+#practice blockquote cite{
+    display:block;
+    text-align:right;
 }
 
 aside[role="complementary"]{
