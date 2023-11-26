@@ -3,19 +3,31 @@
 
 <head>
   <title>Web Project Starter</title>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Keyword rich narrative on site purpose" />
-  <meta name="author" content="Thomas Wallace" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!-- Add your own Font -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" >
+  <meta name="description" content="Keyword rich narrative on site purpose" >
+  <meta name="author" content="Thomas Wallace" >
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" >
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-  <header role="banner" class="primary">
+  <header class="primary">
     <h1><a href="index.html">SpaceX</a></h1>
-    <h2>Site Tagline</h2>
-    <nav role="navigation">
+    <h2>SpaceX History</h2>
+    <img src="assets/img/spaceX-logo.png" alt="SpaceX Logo" class="header-logo">
+    <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="history.html">SpaceX History</a></li>
         <li><a href="faq.html">Frequently Asked Questions</a></li>
       </ul>
@@ -42,20 +54,6 @@
   </section>
   <section id="articles" class="container">
     <article class="post">
-      <head>
-        <title>Recent Missions</title>
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-            th, td {
-                padding: 5px;
-                text-align: left;
-            }
-        </style>
-    </head>
-    <body>
     
     <h2>Recent Missions</h2>
     
@@ -70,7 +68,7 @@
         <td>9/7/2017</td>
         <td>U.S. Air Force (OTV-5)</td>
         <td>Cape Canaveral</td>
-        <td></td>
+        <td>N/A</td>
       </tr>
       <tr>
         <td>8/24/2017</td>
@@ -103,13 +101,13 @@
         <td>Dragon & Falcon 9</td>
       </tr>
     </table>
-    
-    </body>
-    
-  </section>
-  <footer id="colophon" role="contentinfo">
-    <h6>&copy; 2021 Student Name</h6>
-  </footer>
+  </article>
+</section>
+<footer id="colophon">
+  <h6>&copy; 2023 James Dempsey</h6>
+  <h6>CONTACT US: <a href="mailto:webtech@gmail.com">webtech@gmail.com</a></h6>
+  <h6>DISCLAIMER: This site is based on <a href="https://www.spacex.com">SpaceX.com</a> and is not owned by SpaceX</h6>
+</footer>
 </body>
 
 </html>

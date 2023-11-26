@@ -1,90 +1,98 @@
-/* General Styles */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-  }
-  
-  a {
+}
+
+a {
     color: #007bff;
     text-decoration: none;
-  }
-  
-  .container {
+}
+
+.container {
     width: 80%;
     margin: auto;
     overflow: hidden;
-  }
-  
-  /* Header Styles */
-  header {
+}
+
+header {
     background: #333;
     color: #fff;
     padding-top: 30px;
+    padding-left: 30px;
     min-height: 70px;
     border-bottom: #007bff 3px solid;
-  }
-  
-  header a {
-    color: #fff;
-  }
-  
-  header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  
-  header nav {
-    float: right;
+    position: relative;
+}
+
+header h1, header h2 {
+    margin: 0;  
+}
+
+header a {
+    color: #fff;  
+    text-decoration: none;  
+}
+
+header a:hover {
+    color: #007bff; 
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    width: 30%;
+    height: auto;
+}
+
+header nav ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+header nav ul li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+header nav {
     margin-top: 10px;
-  }
-  
-  header h1 {
-    margin-top: 0;
-  }
-  
-  /* Section Styles */
-  section#content {
+}
+
+section#content, section#articles {
     margin-top: 20px;
-  }
-  
-  section#articles {
-    margin-top: 20px;
-  }
-  
-  /* Article Styles */
-  article {
+}
+
+article {
     margin-bottom: 20px;
     padding: 20px;
     background: #fff;
-  }
-  
-  article header h2 {
+}
+
+article header h2 {
     margin-top: 0;
-  }
-  
-  article .post-meta {
+}
+
+article .post-meta {
     font-style: italic;
     color: #666;
-  }
-  
-  article figure {
+}
+
+article figure {
     text-align: center;
-  }
-  
-  article img {
+}
+
+article img {
     max-width: 100%;
     height: auto;
-  }
-  
-  /* Footer Styles */
-  footer {
+}
+
+footer {
     text-align: center;
     padding: 20px 0;
     background: #333;
     color: #fff;
-  }
-  
+}
