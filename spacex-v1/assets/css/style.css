@@ -23,7 +23,7 @@ header {
     padding-top: 30px;
     padding-left: 30px;
     min-height: 70px;
-    border-bottom: #007bff 3px solid;
+    border: #000 3px solid;
     position: relative;
 }
 
@@ -79,6 +79,7 @@ article header h2 {
 article .post-meta {
     font-style: italic;
     color: #666;
+    border: #000 3px solid;
 }
 
 article figure {
